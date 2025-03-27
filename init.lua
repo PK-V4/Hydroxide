@@ -249,7 +249,7 @@ if readFile and writeFile then
             importCache[asset] = assets
             return unpack(assets)
         end
-
+        warn("LOL")
        -- writeFile("__oh_version.txt", releaseInfo.tag_name)
     elseif ran and releaseInfo.tag_name == result then
         function environment.import(asset)
