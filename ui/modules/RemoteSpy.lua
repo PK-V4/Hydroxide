@@ -838,12 +838,16 @@ scriptContext:SetCallback(function()
     local method
 
     if remoteClassName == "RemoteEvent" then
+            warn(remoteClassName)
         method = "FireServer"
     elseif remoteClassName == "RemoteFunction" then
+            warn(remoteClassName)
         method = "InvokeServer"
     elseif remoteClassName == "BindableEvent" then
+            warn(remoteClassName)
         method = "Fire"
     elseif remoteClassName == "BindableFunction" then
+            warn(remoteClassName)
         method = "Invoke"
     end
 
@@ -912,12 +916,16 @@ repeatCallContext:SetCallback(function()
     local method 
 
     if remoteClassName == "RemoteEvent" then
+            warn(remoteClassName)
         method = "FireServer"
     elseif remoteClassName == "RemoteFunction" then
+            warn(remoteClassName)
         method = "InvokeServer"
     elseif remoteClassName == "BindableEvent" then
+            warn(remoteClassName)
         method = "Fire"
     elseif remoteClassName == "BindableFunction" then
+            warn(remoteClassName)
         method = "Invoke"
     end
 
